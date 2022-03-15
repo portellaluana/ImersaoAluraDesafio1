@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+    <title>ImersaoAlura</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div>
+            <h1>Simulação de lucro</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="inputs">
+            <div class="container">
+
+                <div class="quantidade">
+                    <p>Quantidade de ações</p>
+                    <input type="number" id="numeroAcoes" placeholder="Quantas ações dessa empresa você tem?">
+                </div>
+
+                <div class="valor">
+                    <p>Valor de cada ação</p>
+                    <input type="number" id="valorAcoes" placeholder="Quanto você pagou por ação?">
+                </div>
+
+                <div class="porcentagem">
+                    <p>Lucro</p>
+                    <input type="number" id="lucroAcoes" placeholder="Quantos % você quer de lucro?">
+                </div>
+
+            </div>
+            <div class="resultadoFinal">
+                <h2 id="lucroSimulado"></h2>
+            </div>
+            <div class="container-button">
+                <button type="submit" onclick="Calcular()"> CALCULAR MEU LUCRO</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
